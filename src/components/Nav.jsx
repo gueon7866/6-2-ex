@@ -1,24 +1,26 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import './Nav.css'
 
- const Nav = () => {
+const Nav = () => {
 
   return (
     <nav>
-      <h1><a ahref="/">Title</a></h1>
-      <ul classNmae="nav-list"></ul>
-      <li>
-        <NavLink to="/">홈</NavLink>
-      </li>
-
-      <li>
-        <NavLink to="/about">소개</NavLink>
-      </li>
-
-       <li>
-        <NavLink to="/board">게시판리스트</NavLink>
-      </li>
-
-
+        <h1><a href="/">Title</a></h1>
+        <ul className="nav-list">
+            <li>
+                <NavLink to="/">홈</NavLink>
+            </li>
+            <li>
+                <NavLink to="/about">소개</NavLink>
+            </li>
+            <li>
+                <NavLink to="/board">게시판리스트</NavLink>
+            </li>
+            <li>
+                <NavLink to="/community">커뮤니티</NavLink>
+            </li>
+        </ul>
     </nav>
   )
 }

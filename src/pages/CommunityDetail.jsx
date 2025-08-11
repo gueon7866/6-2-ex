@@ -1,10 +1,9 @@
 import React from 'react'
 import { useParams,useNavigate } from 'react-router-dom'
 
-const BoardDetail = () => {
-  const {id}=useParams()
+const CommunityDetail = () => {
+      const {id}=useParams()
   const nav = useNavigate()
-
   return (
     <section>
         <h1>게시글 상세</h1>
@@ -15,4 +14,10 @@ const BoardDetail = () => {
   )
 }
 
-export default BoardDetail
+export default CommunityDetail
+
+
+
+
+
+

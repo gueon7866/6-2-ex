@@ -1,3 +1,4 @@
+
 import './App.css'
 import { Routes,Route } from 'react-router-dom'
 import Nav from './components/Nav'
@@ -6,6 +7,8 @@ import Board from './pages/Board'
 import Home from './pages/Home'
 import Notfound from './pages/Notfound'
 import BoardDetail from './pages/BoardDetail'
+import Community from './pages/Community'
+import CommunityDetail from './pages/CommunityDetail'
 function App() {
 
   return (
@@ -17,6 +20,8 @@ function App() {
         <Route path='/board' element={<Board/>}/>
         <Route path='/board/:id' element={<BoardDetail/>}/>
         <Route path='*' element={<Notfound/>}/>
+        <Route path='/community' element={<Community/>}/>
+        <Route path='/community/:id' element={<CommunityDetail/>}/>
       </Routes>
 
     </div>

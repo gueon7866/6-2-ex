@@ -1,11 +1,47 @@
+/* 기존 CSS */
 nav {
     display: flex;
     justify-content: space-between;
+    padding: 20px 10px;
+    border-bottom: 1px solid #eee;
 }
 .nav-list {
     display: flex;
+    gap: 20px;
 }
 .nav-list li a.active{
     color: #f00;
     font-weight: bold;
+}
+
+/* 추가 CSS */
+nav {
+    background: #fafafa; /* 부드러운 배경색 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* 은은한 그림자 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav h1 a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+}
+
+nav h1 a:hover {
+    color: #f00; /* 호버 시 타이틀 색 변경 */
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    padding: 6px 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-list li a:hover:not(.active) {
+    background-color: #f0f0f0;
+    color: #f00;
 }
