@@ -9,11 +9,13 @@ import Notfound from './pages/Notfound'
 import BoardDetail from './pages/BoardDetail'
 import Community from './pages/Community'
 import CommunityDetail from './pages/CommunityDetail'
+import Footer from './components/Footer'
 function App() {
 
   return (
     <div>
       <Nav/>
+     
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
@@ -22,8 +24,9 @@ function App() {
         <Route path='*' element={<Notfound/>}/>
         <Route path='/community' element={<Community/>}/>
         <Route path='/community/:id' element={<CommunityDetail/>}/>
+      
       </Routes>
-
+      <Footer/>
     </div>
   )
 }
